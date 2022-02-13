@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marathon Registration Form</title>
+</head>
+<body>
+    
+    <div>
+        <h1>Register for the Marathon!</h1>
+    </div>
+
+    <div>
+        <form action="confirmation.html">
+            <p>
+                <label for="fn">First Name</label>
+                <input type="text" name = "fn" id = "fn" required placeholder = "First Name">
+            </p>
+            <p>
+                <label for="ln">Last Name</label>
+                <input type="text" name = "ln" id = "ln" required placeholder = "Last Name">
+            </p>
+            <p>
+                Select the marathon you would like to run:
+            </p>
+            <p>
+                <input type="radio" id = "c1" name = "mar" required checked value = "5k">
+                <label for="c1">Full Run 5k</label>
+            </p>
+            <p>
+                <input type="radio" id = "c2" name = "mar" required value = "half">
+                <label for="c2">Half Marathon</label>
+            </p>
+            <p>
+                <input type="radio" id = "c3" name = "mar" required value = "full">
+                <label for="c3">Full Marathon</label>
+            </p>
+            <p>
+                <label for="em">Email</label>
+                <input type="email" name = "em" id = "em" required placeholder = "Email address">
+                <div></div>
+            </p>
+            <p>
+                <label for="pn">Phone Number</label>
+                <input type="tel" name = "pn" id = "pn" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder = "Phone Number">
+                <div></div>
+                <b> Please enter your phone number using the following format: 123-456-7890 </b>
+            </p>
+            <p>
+                <label for="un">Create new username:</label>
+                <input type="text" name = "un" id = "un" required placeholder="Enter Username">
+            </p>
+            <p>
+                <label for="pw">Create new password:</label>
+                <input type="password" name = "pw" id = "pw" required pattern = "(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Enter Password">
+                <div></div>
+                <b>Your password must contain the following:</b>
+                <ul>
+                    <li>A lowercase letter</li>
+                    <li>A minimum of 8 characters</li>
+                    <li>A number</li>
+                    <li>A uppercase letter</li>
+                </ul>
+            </p>
+            <p>
+                <label for="age">Select age group:</label>
+                <select name="age" id="age" required>
+                    <option value="young" selected>0 - 18</option>
+                    <option value="middle">18 - 30</option>
+                    <option value="older">30 - 55</option>
+                    <option value="old">55+</option>
+                </select>
+            </p>
+            <p>
+                <label for="time">Confirm the date of the marathon: </label>
+                <input type="date" name = "time" id = "time" required value = "date">
+            </p>
+            <p>
+                <button>Register for the Marathon!</button>
+            </p>
+        </form>
+    </div>
+
+</body>
+</html>
